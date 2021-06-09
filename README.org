@@ -17,8 +17,7 @@ The CNN was trained for a total of *500 epochs*, which takes about a minute to g
   The image placed above is the style image (the one whose semantic features are to be transferred), and the one below is the content image (on which we wish to perform the style transfer)
   #+CAPTION: test image 1
   #+NAME: fig: Test-1
-  [[./results/test1.png
-  ]]
+  [[./results/test1.png]]
 + Golden gate
 
 
