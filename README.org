@@ -4,16 +4,13 @@ The rendering of *semantic content* in an image is deemed to be an arduous task 
 \\
 The algorithm used here allows us to /synthesise new images/ which conglomerates an arbitrary photograph with famous art pieces.
 
-* Basic idea
-
-
 
 * Model architecture
 As described by the paper, I make use of the *VGG-19* architecture. A neat visual representation of the different layers is illustrated below
+\\
 [[./results/vgg-19.png]]
 
-The only difference in my implementation is the use of *Average Pooling layers* as opposed to Max Pooling ones (since it yields /slightly/ more appealing results)/
-
+The only difference in my implementation is the use of *Average Pooling layers* as opposed to Max Pooling ones (since it yields /slightly/ more appealing results).
 
 
 * Results
@@ -35,6 +32,7 @@ The CNN was trained for a total of *500 epochs*, which takes about a minute to g
 
   And the image synthesised after performing style transfer on it:
   [[./results/res2.png]]
+
 
 * Reference
 The main reference that I used for implementing the code was the paper *[[https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Gatys_Image_Style_Transfer_CVPR_2016_paper.pdf]["Image Style Transfer Using Convolutional Neural Networks"]]* (L. A. Gatys /et. al./).
