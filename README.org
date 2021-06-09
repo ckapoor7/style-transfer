@@ -1,0 +1,27 @@
+#+TITLE: Image style transfer
+* Overview
+The rendering of *semantic content* in an image is deemed to be an arduous task in the field of image processing. A major roadblock in this technique was the *lack of dataets* which clearly distinguished an image from its *content and style*.\
+The algorithm used here allows us to /synthesise new images/ which conglomerates an arbitrary photograph with famous art pieces.
+
+* Basic idea
+
+
+
+* Model architecture
+
+
+
+* Results
+The CNN was trained for a total of *500 epochs*, which takes about a minute to generate the images when the code is accelerated by the GPU.
++ Starry night
+  The image placed above is the style image (the one whose semantic features are to be transferred), and the one below is the content image (on which we wish to perform the style transfer)
+  #+CAPTION: test image 1
+  #+NAME: fig: Test-1
+  [[./results/test1.png
+  ]]
++ Golden gate
+
+
+* Reference
+The main reference that I used for implementing the code was the paper *[[https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Gatys_Image_Style_Transfer_CVPR_2016_paper.pdf]["Image Style Transfer Using Convolutional Neural Networks"]]* (L. A. Gatys /et. al./).\
+Apart from this, there were some portions of the mathematical description that came along (particularly *Gram matrices*) for which [[http://cs229.stanford.edu/section/cs229-linalg.pdf][this]] was particularly useful for me.
